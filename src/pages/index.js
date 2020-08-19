@@ -31,34 +31,11 @@ export default () => (
     `}
 render={data => (
   <Layout site={data.site}>
-    <div className="Catalogue">
-      {
-        data.products.edges.map(({ node: product }) => (
-          <div className="Catalogue__item" key={product.id}>
-            <div
-              className="Product snipcart-add-item"
-              data-item-id={product.id}
-              data-item-price={product.price}
-              data-item-image={product.image.url}
-              data-item-name={product.name}
-              data-item-url={`/`}
-            >
-              <div className="Product__image">
-                <Img sizes={product.image.sizes} />
-              </div> <div className="Product__details">
-                <div className="Product__name">
-                  {product.name}
-                  <div className="Product__price">
-                    {product.price}€
-                  </div>
-                </div>
-                <span className="Product__buy">Buy now</span>
-              </div>
-            </div>
-          </div>
-        ))
-      }
-    </div>
+    <div id="my-store-35311023"></div>
+<div>
+  <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?35311023&data_platform=code&data_date=2020-08-19" charset="utf-8"></script>
+  <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-35311023");</script>
+</div>
   </Layout>
      )}
    />
